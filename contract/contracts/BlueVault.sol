@@ -7,11 +7,11 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
- * @title BaseVault
+ * @title BlueVault
  * @notice Main vault contract where users deposit tokens to earn yield
  * @dev Users receive vault shares (receipt tokens) representing their deposit
  */
-contract BaseVault is ERC20, ReentrancyGuard, Ownable {
+contract BlueVault is ERC20, ReentrancyGuard, Ownable {
     IERC20 public immutable asset; // The token users deposit (e.g., USDC)
     IStrategy public strategy; // Active yield strategy
 
